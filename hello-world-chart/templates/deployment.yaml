@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-deployment
+  namespace: test
+spec:
+  selector:
+    matchLabels:
+      app: hello-world
+  replicas: {{ .Values.replicas }}
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      imagePullSecrets: 
+      - name: test-registry-secret
+      containers:
+      - name: hello-world
+        image: cp.stg.icr.io/cp/ibm-cfmr/busybox
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
