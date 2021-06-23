@@ -1,1 +1,1 @@
-# This is Helm Charts repository for POC purpose
+# Helm Charts repository for POC purpose
