@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   cert-badge-chart:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2021-06-28T03:00:07.106364684-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 4a832ae1df2c43877e84a4e2599bfcc133175aeaea60bbf0fad7ab1c98dd1686
+    name: cert-badge-chart
+    type: application
+    urls:
+    - cert-badge-charts/cert-badge-chart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.0.2
-    created: "2021-06-24T06:08:03.810823694-04:00"
+    created: "2021-06-28T03:00:07.105630505-04:00"
     description: A Helm chart for Kubernetes
     digest: ec05387fe5b73885125e7e961bac03fca6433c09ee68223385aea5535b0362b3
     name: cert-badge-chart
@@ -11,4 +21,4 @@ entries:
     urls:
     - cert-badge-charts/cert-badge-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-24T06:08:03.810368302-04:00"
+generated: "2021-06-28T03:00:07.10454228-04:00"
